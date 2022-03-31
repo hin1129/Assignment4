@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.RandomJokeFragment">
+
+    <!--dialog-->
+    <Button
+        android:id="@+id/button_random_joke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="261dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="46dp"
+        android:text="Random joke"
+        app:layout_constraintBottom_toTopOf="@+id/button_text_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--text input-->
+    <Button
+        android:id="@+id/button_text_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginBottom="41dp"
+        android:text="Text input"
+        app:layout_constraintBottom_toTopOf="@+id/button_never_ending_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_random_joke" />
+
+    <!--never ending-->
+    <Button
+        android:id="@+id/button_never_ending_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginBottom="201dp"
+        android:text="Never ending list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_text_input" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
